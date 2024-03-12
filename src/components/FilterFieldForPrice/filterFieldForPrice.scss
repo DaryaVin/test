@@ -1,0 +1,10 @@
+@import "../UI/baseStyle.scss";
+
+.filterFieldForPrice {
+  width: $width;
+}
+
+.filterFieldForPrice__validatorMessage {
+  color: $colorError;
+  
+}

@@ -1,0 +1,45 @@
+@import "../UI/baseStyle.scss";
+
+
+@media (min-width: 767px) {
+  .filter {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    width: calc($width*2 + 60px);
+    background-color: $colorBcg;
+  }
+  
+  .filter__StrSearch {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    // width: calc($width * 2);
+    width: 100%;
+    align-self: center;
+  }
+  
+  .filter__brand {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  
+  .filter__price {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  
+}
+@media (max-width: 767px) {
+  .filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    & > * {
+      width: $width;
+    }
+  }
+}

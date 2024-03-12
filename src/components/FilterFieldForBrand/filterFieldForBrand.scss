@@ -1,0 +1,27 @@
+@import "../UI/baseStyle.scss";
+
+.filterFieldForBrand {
+  width: $width;
+  min-height: 64.5px;
+  position: relative;
+  .filterFieldForBrand__dropdown {
+    position: absolute;
+  }
+}
+.filterFieldForBrand__currantValueStr_empty {
+  color: $color1Opacity25;
+}
+
+.filterFieldForBrand__dropdown {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 21px;
+  left: 0;
+  right: 0;
+}
+
+.filterFieldForBrand__brandList {
+  list-style-type: none;
+}
